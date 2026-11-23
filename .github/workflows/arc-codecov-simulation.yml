@@ -20,7 +20,7 @@ jobs:
             production.cloudflare.docker.com:443
             registry.npmjs.org:443
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v7
         with:
           node-version: 18
       - name: npm install
