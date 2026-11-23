@@ -2,6 +2,10 @@ name: "Hosted: HTTPS Monitoring with Harden-Runner"
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+  issues: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
