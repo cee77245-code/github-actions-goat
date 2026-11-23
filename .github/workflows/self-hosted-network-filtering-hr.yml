@@ -1,7 +1,11 @@
 name: "Self-Hosted (VM): Network Filtering with Harden-Runner"
 on:
   workflow_dispatch:
-    
+
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   build:
     runs-on: [self-hosted, ec2]
